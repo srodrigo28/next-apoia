@@ -2,7 +2,9 @@
 
 #### Sequência
 > * start 9min
-> * 1. auth
+> * 1. prisma
+> * 2. auth github
+> * 3. proteger rotas
 
 > #### Authjs
 https://authjs.dev/getting-started/installation?framework=Next.js
