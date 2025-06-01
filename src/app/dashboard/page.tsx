@@ -1,7 +1,16 @@
 import { DonationTable } from "./_components/donates";
 import { Stats } from "./_components/analytics";
+import { redirect } from "next/navigation";
+import { auth } from "@/lib/auth";
 
 export default async function Dashboard() {
+  const session = await auth();
+
+  if(!session?.user){
+    redirect("/")
+  }
+
+  console.log(session.user)
 
   return (
     <div className="p-4">
@@ -10,7 +19,6 @@ export default async function Dashboard() {
           <h1 className="text-2xl font-semibold">Minha conta</h1>
         </div>
       </section>
-
       <Stats />
 
 
