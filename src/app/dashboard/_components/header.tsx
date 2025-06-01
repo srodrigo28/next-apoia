@@ -12,7 +12,7 @@ export function Header() {
         <div className="flex items-center gap-2 font-semibold">
           <Link href="/dashboard" className="flex items-center gap-1 text-amber-500">
             <HandCoins className="h-6 w-6 mr-2" />
-            <span className="text-xl font-bold">
+            <span className="text-xl font-bold cursor-pointer">
               ApoiaDev
             </span>
           </Link>
@@ -22,15 +22,11 @@ export function Header() {
           <Link href="/dashboard" className="text-sm font-medium transition-colors hover:text-primary">
             Dashboard
           </Link>
-          <Link href="/dashboard/me" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="/dashboard/me" className="text-sm font-medium transition-colors hover:text-primary cursor-pointer">
             Meu perfil
           </Link>
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="text-red-500 hover:text-red-600 hover:bg-red-50"
-          >
+          <Button variant="ghost" size="icon" className="text-red-500 hover:text-red-600 hover:bg-red-50 cursor-pointer">
             <LogOut className="h-5 w-5" />
             <span className="sr-only">Sair</span>
           </Button>

@@ -10,7 +10,7 @@ export default async function Dashboard() {
     redirect("/")
   }
 
-  console.log(session.user)
+  console.log(session.user) // pasta types/next-auth.d.ts
 
   return (
     <div className="p-4">
@@ -20,8 +20,6 @@ export default async function Dashboard() {
         </div>
       </section>
       <Stats />
-
-
       <h2 className="text-2xl font-semibold mb-2">Últimas doações</h2>
       <DonationTable />
     </div>

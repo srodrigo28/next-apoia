@@ -6,6 +6,11 @@
 > * 5. PrismaORM
 > * 6. NeonDB
 
+#### ultimo: 1:04
+
+```
+https://www.youtube.com/watch?v=rB46XcD-rmQ&t=5799s
+```
 
 #### Provider
 https://next-auth.js.org/configuration/providers/email
